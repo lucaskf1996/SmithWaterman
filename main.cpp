@@ -110,7 +110,7 @@ int main(){
             else{
                 std::reverse(sequenceA.begin(), sequenceA.end());
                 std::reverse(sequenceB.begin(), sequenceB.end());
-                outfile << "sequenceA:  " << sequenceA << std::endl << "sequenceB:  " << sequenceB << std::endl;
+                outfile << sequenceA << std::endl << sequenceB << std::endl;
                 outfile.close();
                 return 1;
             }
@@ -120,7 +120,7 @@ int main(){
         else{
             std::reverse(sequenceA.begin(), sequenceA.end());
             std::reverse(sequenceB.begin(), sequenceB.end());
-            outfile << "sequenceA:  " << sequenceA << std::endl << "sequenceB:  " << sequenceB << std::endl;
+            outfile << sequenceA << std::endl << sequenceB << std::endl;
             outfile.close();
             return 1;
         }
