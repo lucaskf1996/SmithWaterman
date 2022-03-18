@@ -11,6 +11,6 @@ A abordagem procura encontrar subsequências que maximizam os valores de pareame
 5.     Calcular deleção  = H[i-1,j] - 1
 6.     Calcular inserção = H[i,j-1] - 1
 7.     Calcular H[i,j]=máximo (0, diagonal, deleção, inserção)
-9. Retornar o máximo de H[_,_]
+9. Retornar o máximo de H
 
 Durante o calculo do máximo entre diagonal, deleção e inserção no passo 7, a origem do valor é guardada no H[i,j], ou seja, caso o máximo seja o da diagonal, então a origem guardada é um código referente a diagonal, caso seja de deleção, um código referente a deleção e caso seja de inserção, um código referente a inserção. Para obter as sequências alinhadas pode-se utilizar essas origens dos valores para gerar a sequência da frente para trás e invertê-la no final. 
